@@ -13,7 +13,7 @@ RUN npm -g install bower
 RUN bower --allow-root install --force
 
 # Move bower folder
-RUN mv bower_components/ public/resources
+RUN mv bower_components/ public/resources/bower_components
 
 # Install app dependencies
 COPY package.json /app/
