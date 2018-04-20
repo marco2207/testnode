@@ -7,7 +7,7 @@ function fetchData() {
     var initInjector = angular.injector(["ng"]);
     var $http = initInjector.get("$http");
 
-    return $http.get("catalog/config").then(function(response) {
+    return $http.get("config").then(function(response) {
         app.constant("CONFIG", response.data);
 				console.log("Boostrap success")
     }, function(error) {
