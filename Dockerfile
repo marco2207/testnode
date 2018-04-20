@@ -5,11 +5,11 @@ COPY . /app
 
 WORKDIR "/app"
 
-# Install app dependencies
-RUN npm install; npm prune --production
-
 ADD https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 /usr/local/bin/jq
 RUN chmod a+x /usr/local/bin/jq
+
+# Install app dependencies
+RUN npm install; npm prune --production
 
 # Install bower
 RUN npm -g install bower
