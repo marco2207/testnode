@@ -16,7 +16,7 @@ RUN npm -g install bower
 RUN bower --allow-root install --force
 
 # Move bower folder
-RUN mv bower_components/* public/resources
+#RUN mv bower_components/* public/resources
 
 ENV NODE_ENV production
 ENV PORT 3000
