@@ -13,6 +13,7 @@ require('./services/index')(app);
 require('./routers/index')(app);
 
 // Add your code here
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 const port = process.env.PORT || localConfig.port;
 app.listen(port, function(){
