@@ -1,4 +1,5 @@
-app.service('BlueAPIService',['$http', 'CONFIG', '$base64', function($http, CONFIG, $base64) {
+//app.service('BlueAPIService',['$http', 'CONFIG', '$base64', function($http, CONFIG, $base64) {
+app.service('BlueAPIService',['$http', '$base64', function($http, CONFIG, $base64) {
 
 	var invokeService = function(restUrl,
 			requestType, parameters, successCallback,
